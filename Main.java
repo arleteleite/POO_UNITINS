@@ -2,15 +2,17 @@ package polimorfismo;
 
 public class Main {
     public static void main(String[] args) {
-        Animal cachorro = new Cachorro();
-        Gato gato = new Gato();
-        Animal animal = new Animal();
-        Animal passarinho = new Passarinho();
+        Animal meuAnimal = new Animal();
+        Animal meuCachorro = new Cachorro();
+        Animal meuGato = new Gato();
+        Animal meuPassarinho = new Passarinho();
+        Animal minhaBaleia = new Baleia();
 
-        animal.emitirSom();
-        gato.emitirSom();
-        cachorro.emitirSom();
-        passarinho.emitirSom();
+        Animal[] animais = {meuAnimal, meuCachorro, meuGato, meuPassarinho, minhaBaleia};
+
+        for(Animal animal : animais){
+            animal.emitirSom();
+        }
 
 
     }
